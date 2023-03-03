@@ -11,25 +11,3 @@ Inicialmente serão utilizadas as Pizzas do tipo:
 
 Esta coleção de facilitar a criação das Pizzas.
 Cada Pizza terá um método de descrição onde haverá o nome, o valor e os ingredientes da Pizza.
-
-## Simple Factory
-
-```mermaid
-    classDiagram
-
-        Context ..> Factory
-        class Factory{
-            + create(): Pizza
-        }
-
-        class Context {
-            - factory
-            + criarPizza(tipo): Pizza
-            + entregaPizza()
-        }
-
-        Client --> Context
-        class Client {
-
-        }
-```

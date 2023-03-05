@@ -13,7 +13,7 @@ public class Pizzaria {
         pizza = factory.criarPizza(tipo);
     }
     
-    public void entregar() {
+    public void delivery() {
         System.out.println(pizza.getDescricao());
     }
     

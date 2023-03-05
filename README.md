@@ -30,7 +30,7 @@ Para resolução deste desafio iremo utilizar o Pattern Factory.
             + create(type): Pizza
         }
 
-        class Factory {
+        class Context {
             + createObject(type): Pizza
         }
 

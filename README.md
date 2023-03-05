@@ -52,6 +52,7 @@ Esta é a modelagem do Simple Factory adaptado ao nosso desafio.
         }
 
         class Pizzaria {
+            - pizza: Pizza
             + criarPizza(tipo): Pizza
             + delivery()
         }

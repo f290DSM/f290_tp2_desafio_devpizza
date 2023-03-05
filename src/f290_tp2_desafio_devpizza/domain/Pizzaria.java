@@ -1,0 +1,20 @@
+package f290_tp2_desafio_devpizza.domain;
+
+import f290_tp2_desafio_devpizza.domain.pizza.Pizza;
+import f290_tp2_desafio_devpizza.domain.factory.PizzaFactory;
+import f290_tp2_desafio_devpizza.domain.enums.TipoPizza;
+
+public class Pizzaria {
+    
+    Pizza pizza = null;
+        
+    public void criarPizza(TipoPizza tipo) {
+        var factory = new PizzaFactory();
+        pizza = factory.criarPizza(tipo);
+    }
+    
+    public void entregar() {
+        System.out.println(pizza.getDescricao());
+    }
+    
+}

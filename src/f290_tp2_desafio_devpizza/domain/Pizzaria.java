@@ -7,9 +7,9 @@ import f290_tp2_desafio_devpizza.domain.enums.TipoPizza;
 public class Pizzaria {
     
     Pizza pizza = null;
+    PizzaFactory factory;
         
     public void criarPizza(TipoPizza tipo) {
-        var factory = new PizzaFactory();
         pizza = factory.criarPizza(tipo);
     }
     
